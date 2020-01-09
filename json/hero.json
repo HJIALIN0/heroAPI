@@ -1,10 +1,23 @@
 [
-  { "id": 1, "name": "盖伦", "skill": "草丛伦", "icon": "/imgs/盖伦.png" },
+  {
+    "id": 1,
+    "name": "aaaa",
+    "skill": "ga",
+    "icon": "\\public\\uploads\\e10f918569a8bdcaa565414a0ebf3066"
+  },
   { "id": 2, "name": "赵信", "skill": "枪出如龙", "icon": "/imgs/赵信.png" },
   {
     "id": 4,
     "name": "貂蝉",
     "skill": "飞飞飞",
     "icon": "e:\\A黑马课程\\就业班\\9.node.js\\0107Node.js第四天\\code\\heroAPI\\public\\uploads\\886598f83136b7dc67274ecac58d6255"
+  },
+  { "id": 5, "name": "小土狗", "skill": "舔", "icon": "yyyy" },
+  { "id": 6, "name": "aaa", "skill": "sss", "icon": "cvnksnck" },
+  {
+    "id": 7,
+    "name": "貂蝉",
+    "skill": "飞飞飞",
+    "icon": "\\public\\uploads\\b1ecaf96a7cbc77581327827215d8b13"
   }
 ]
