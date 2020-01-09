@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "盖伦", "skill": "草丛伦", "icon": "/imgs/盖伦.png" },
+  { "id": 2, "name": "赵信", "skill": "枪出如龙", "icon": "/imgs/赵信.png" },
+  {
+    "id": 4,
+    "name": "貂蝉",
+    "skill": "飞飞飞",
+    "icon": "e:\\A黑马课程\\就业班\\9.node.js\\0107Node.js第四天\\code\\heroAPI\\public\\uploads\\886598f83136b7dc67274ecac58d6255"
+  }
+]
