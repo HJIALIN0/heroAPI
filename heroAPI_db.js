@@ -117,12 +117,13 @@ app.get("/list", (req, res) => {
 
 //3.英雄新增
 app.post("/add", upload, (req, res) => {
+  console.log(req);
   const { name, skill } = req.body;
   const { filename } = req.file;
   db.add({
     name,
     skill,
-    icon: filename,
+    icon: `../public/uploads/${filename}`,
     success: result => {
       res.send({ code: 200, msg: "新增成功" });
     },
@@ -218,7 +219,7 @@ app.post("/edit", upload, (req, res) => {
     id,
     name,
     skill,
-    icon: filename,
+    icon: `../public/uploads/${filename}`,
     success: result => {
       res.send({ code: 200, msg: "编辑成功" });
     },

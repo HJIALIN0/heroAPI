@@ -32,9 +32,14 @@ module.exports = {
       (error, results) => {
         if (error) throw error;
         const { affectedRows } = results;
-        if (affectedRows === 1) {
+        if (
+          affectedRows >= 1 &&
+          name !== undefined &&
+          skill !== undefined &&
+          icon !== undefined
+        ) {
           success(results);
-        } else if (affectedRows === 0) {
+        } else {
           fail(error);
         }
       }
@@ -48,9 +53,9 @@ module.exports = {
     ) {
       if (error) throw error;
       const { affectedRows } = results;
-      if (affectedRows === 1) {
+      if (affectedRows >= 1 && id !== undefined) {
         success(results);
-      } else if (affectedRows === 0) {
+      } else {
         fail(error);
       }
     });
@@ -62,9 +67,15 @@ module.exports = {
       function(error, results) {
         if (error) throw error;
         const { affectedRows } = results;
-        if (affectedRows === 1) {
+        if (
+          affectedRows >= 1 &&
+          id !== undefined &&
+          name !== undefined &&
+          skill !== undefined &&
+          icon !== undefined
+        ) {
           success(results);
-        } else if (affectedRows === 0) {
+        } else {
           fail(error);
         }
       }
@@ -99,13 +110,13 @@ module.exports = {
   }
 };
 
-//1.增
+// 1.增
 // db.add({
 //   name: "李清照",
 //   skill: "作词",
 //   icon: "liqingzhao",
 //   success: res => {
-//     console.log("新增成功");
+//     console.log("新增成功", res);
 //   },
 //   fail: err => {
 //     console.log("新增失败");
